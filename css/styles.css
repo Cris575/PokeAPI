@@ -1,0 +1,64 @@
+span{
+    text-transform: capitalize;
+}
+#div1 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+.container {
+    width: 100px;
+    margin-bottom: 20px;
+}
+.grass{
+    background-color: green;
+}
+.fire{
+    background-color: firebrick;
+}
+.water{
+    background-color: blue;
+}
+.flying{
+    background-color: aquamarine;
+}
+.poison{
+background-color: purple;
+}
+.bug{
+    background-color: rgb(146, 162, 18)
+}
+.normal{
+    background-color: gray;
+}
+.electric{
+    background-color: yellow;
+}
+.ground{
+    background-color: rgb(146, 80 , 27);
+}
+.fairy{
+    background-color: rgb(239, 113, 239);
+}
+.psychic{
+    background-color: rgb(239, 63, 122);
+}
+.fighting{
+    background-color: rgb(255, 129, 0);
+}
+.steel{
+    background-color: rgb(96, 162, 185);
+}
+.rock{
+    background-color: rgb(176, 171, 130);
+}
+.ice{
+    background-color: rgb(61, 217, 255);
+}
+.ghost{
+    background-color: rgb(111, 62, 111);
+}
+.dragon{
+    background-color: rgb(79, 96, 226);
+}
