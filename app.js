@@ -1,6 +1,15 @@
 const a = document.getElementById('div1');
 const all = document.getElementById('all');
 let p = document.querySelectorAll(".mi-elemento");
+let names = document.getElementById("name");
+
+names.addEventListener("keyup", event =>{
+    if (event.key === "Enter") {
+        a.innerHTML = '';
+        pokeApi(names.value.toLowerCase())
+    }
+})
+
 
 function pokeApi(id) {
     fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
@@ -13,11 +22,11 @@ function pokeApi(id) {
 }
 
 
-function fecthPokemon() {
+const fecthPokemon =  () => {
     a.innerHTML = '';
     for (let i = 1; i <= 151; i++) {
         pokeApi(i);
-    }
+    }   
 }
 
 function createPokemon(pokemon) {
@@ -36,8 +45,8 @@ function createPokemon(pokemon) {
 }
 fecthPokemon();
 
-p.forEach(elemento => elemento.addEventListener("click", (event) => {
-    
+
+p.forEach((e) => e.addEventListener("click", (event) => {
     const elemento = event.currentTarget.id;
     a.innerHTML = '';
     for (let i = 1; i <= 151; i++) {
